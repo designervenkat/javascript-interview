@@ -33,3 +33,16 @@ for (let i = 0; i < array.length; i++) {
 
 console.log(frequency) // Output: { '1': 1, '2': 2, '3': 1, '4': 3, '5': 1 }
 ```
+
+```js
+let arr = ['a', 'a', 'b', 'c', 'd', 'd', 'd']
+
+const frequency = {}
+
+for (let i = 0; i < arr.length; i++) {
+   const element = arr[i]
+   frequency[element] ? frequency[element]++ : (frequency[element] = 1)
+}
+
+console.log(frequency) // { a: 2, b: 1, c: 1, d: 3 }
+```
